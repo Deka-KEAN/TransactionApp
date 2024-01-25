@@ -1,10 +1,16 @@
 
+import { BrowserRouter as Router, Routes, Route, Switch } from "react-router-dom"
+
 function App() {
 
   return (
-    <div>
-        Hello world
-    </div>
+    <Router>
+      <Routes>
+        <Route to="/signup" />
+        <Route to="/signin"/>
+        <Route to="/dashboard"/>   
+      </Routes>
+    </Router>
   )
 }
 
