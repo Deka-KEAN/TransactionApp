@@ -3,7 +3,7 @@ const { number } = require('zod');
 
 const {Schema} = mongoose;
 
-mongoose.connect("mongodb://localhost:27017/paytm");
+// mongoose.connect("mongodb://localhost:27017/paytm");
 
 // Simple Way
 // const UserSchema= new Schema({

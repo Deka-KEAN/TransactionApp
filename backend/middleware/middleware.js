@@ -18,9 +18,11 @@ const authMiddleware = (req,res,next) => {
             req.userId=verified.userId;
             next();
         }else{
+            
             return res.status(403).json({});
         }
     }catch(err){
+        console.log("err");
         return res.status(403).json(err);
     }
 }
